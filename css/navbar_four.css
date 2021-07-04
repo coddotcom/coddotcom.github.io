@@ -10,7 +10,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: blue;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,7 +23,7 @@ nav{
 
 .nav-links{
   display: flex;
-  width: 35%;
+  width: 40%;
 }
 
 .nav-links li{
@@ -32,7 +32,7 @@ nav{
   
 }
 .nav-links a{
-  color: rgb(226,226,226);
+  color: rgb(0,0,0);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight:bold;
@@ -47,7 +47,7 @@ nav{
 .burger div{
   width:25px;
   height:3px;
-  background-color:#fff;
+  background-color:#000;
   margin: 5px;
   transition: all 0.3s ease
   
@@ -64,12 +64,12 @@ nav{
     overflow-x: hidden;
   }
   .nav-links{
-	 
+	 z-index:100;
     position:absolute;
     right:0px;
-    height:92vh;
+    height:100%;
     top: 10vh;
-    background-color:#5d4954;
+    background-color:#fff;
     display:flex;
     flex-direction: column;  
     align-items: center;
