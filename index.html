@@ -55,7 +55,10 @@
   </div>
 </nav>
 
-
+<section class="home">
+	  <h3>Tanzania Pilot Training Centre</h3>
+	   <h3>For <span  id="sequence"></span></h3>
+    </section>
 
 
 
@@ -91,12 +94,38 @@ const navSlide = () => {
 navSlide();
 </script>
 
+ <script src="js/jquery.backstretch.min.js"></script>
+   <script src="js/jquery.backstretch.js"></script>
    
+   
+   <script>
+	   $(".home").backstretch([
+			{ url: "https://youtu.be/k3dsx7hqWcA", duration: 30000, mute: true, alignY: 0, isVideo: true }
+        ]);
+   </script>
+   
+   <script>
+   var example = ["Private Pilot Training","Commercial Pilot Training","Instrument Ratings","ATPL Theory Training","Night Ratings","Multi-Engine Training","Foreign License Conversion","Well Equipped Cessna 152 and 172 Aircraft","Assistance to Find Accomodation Near the Airport﻿"];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence").innerHTML = example[i];
+                    textSequence(++i);
+                }, 2000); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+
+   </script>
+      
 
 </body>
-
-
-
 </html>
 
 
