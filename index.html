@@ -12,9 +12,10 @@
 
 
     
-     <link rel="stylesheet" type="text/css" href="css/masonry.css"/>
+     
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	 <link rel="stylesheet" type="text/css" href="css/navbar_four.css"/>
+	 <link rel="stylesheet" type="text/css" href="css/masonry.css"/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -32,7 +33,13 @@
 </head>
 
 <style>
- .home {
+
+.card-body{ background: #09D;color:#fff;}
+
+.card-link{background:#fff;color:#09D;padding:10px 15px;border-radius:5px;}
+
+
+  .home {
     width: 100%;
     height:100vh;
     background-image: url();
@@ -50,22 +57,22 @@
 
    .home{height:300px;padding-top:100px;}
     .home h3{font-size:20px;text-shadow: 0px 5px 10px #000;}
+	
 	#logo{width:80px;height:50px;}
 	
 	}
-
 </style>
 
 <body>
 <nav>
   <div class="logo">
-        <a href=""><img id="logo" src="img/logo.PNG"/></a>
+   <a href=""><img id="logo" src="img/logo.PNG"/></a>
   </div>
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Work</a></li>
-    <li><a href="#">Projects</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact us</a></li>
    
   </ul>
   <div class="burger">
@@ -74,6 +81,7 @@
     <div class="line3"></div>
   </div>
 </nav>
+
 <section class="home">
 	  <h3>Tanzania Pilot Training Centre</h3>
 	   <h3>For <span  id="sequence"></span></h3>
@@ -83,13 +91,14 @@
 <div class="container-fluid">
     <div class="card-columns">
         <div class="card">
-            <img class="card-img-top img-fluid" src="https://lufthansa-aviation-training-usa.com/wp-content/uploads/2021/05/Cirrus-SR-20-Sunset.jpg" alt="Card image cap">
+            <img class="card-img-top img-fluid" style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/3.jpg" alt="">
             <div class="card-body">
-                <h4 class="card-title">Card title that wraps to a new line</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h4 class="card-title">Private Pilot Training</h4>
+                <p class="card-text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+				<a href="" class="card-link">Read more</a>
             </div>
         </div>
-        <div class="card card-body">
+       <!-- <div class="card card-body">
             <blockquote class="card-blockquote">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer>
@@ -98,16 +107,16 @@
         </small>
                 </footer>
             </blockquote>
-        </div>
+        </div>-->
         <div class="card">
             <img class="card-img-top img-fluid" src="https://lufthansa-aviation-training-usa.com/wp-content/uploads/2021/05/Cirrus-SR-20-Sunset.jpg" alt="Card image cap">
             <div class="card-body">
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">Commercial Pilot Training</h4>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="" class="card-link">Read more</a>
             </div>
         </div>
-        <div class="card card-body card-inverse card-primary">
+       <!-- <div class="card card-body card-inverse card-primary">
             <blockquote class="card-blockquote">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
                 <footer>
@@ -116,16 +125,16 @@
         </small>
                 </footer>
             </blockquote>
-        </div>
+        </div>-->
         <div class="card card-body text-xs-center">
-            <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">ATP Theory Training</h4>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+           <a href="" class="card-link">Read more</a>
         </div>
         <div class="card">
             <img class="card-img img-fluid" src="https://lufthansa-aviation-training-usa.com/wp-content/uploads/2021/05/Cirrus-SR-20-Sunset.jpg" alt="Card image">
         </div>
-        <div class="card card-body text-right">
+       <!-- <div class="card card-body text-right">
             <blockquote class="card-blockquote">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer>
@@ -134,16 +143,44 @@
                     </small>
                 </footer>
             </blockquote>
-        </div>
+        </div>-->
         <div class="card card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h4 class="card-title">Multi-Engine Training</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+           <a href="" class="card-link">Read more</a>
         </div>
+		
+		 <div class="card card-body text-xs-center">
+            <h4 class="card-title">Instrument ratings</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+           <a href="" class="card-link">Read more</a>
+        </div>
+		
     </div>
 </div>
 </section>	
-	
+
+
+
+<section>
+<div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+  <div class="grid-col grid-col--1"></div>
+  <div class="grid-col grid-col--2"></div>
+  <div class="grid-col grid-col--3"></div>
+  <div class="grid-col grid-col--4"></div>
+
+  <div class="grid-item grid-item--b"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/1.jpg"/></div>
+  <div class="grid-item grid-item--a"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/2.jpg"/></div>
+  <div class="grid-item grid-item--c"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/3.jpg"/></div>
+  <div class="grid-item grid-item--a"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/4.jpg"/></div>
+  <div class="grid-item grid-item--b"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/5.jpg"/></div>
+  <div class="grid-item grid-item--c"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/6.jpg"/></div>
+  <div class="grid-item grid-item--a"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/6.jpg"/></div>
+  <div class="grid-item grid-item--b"><img style='height: 100%; width: 100%; object-fit: cover; max-width: 100%; max-height: 100%;' src="img/6.jpg"/></div>
+  <div class="grid-item grid-item--a d-flex justify-content-center align-items-center text-light"><h3>Gallery</h3></div>
+
+</div>
+</section>
 
 
 
@@ -179,6 +216,18 @@ const navSlide = () => {
 navSlide();
 </script>
 
+<script src="https://unpkg.com/colcade@0/colcade.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script>
+$('.grid').colcade({
+  columns: '.grid-col',
+  items: '.grid-item'
+})
+</script>
+
+
  <script src="js/jquery.backstretch.min.js"></script>
    <script src="js/jquery.backstretch.js"></script>
    
@@ -208,9 +257,12 @@ navSlide();
         }
 
    </script>
-      
+   
 
 </body>
+
+
+
 </html>
 
 
