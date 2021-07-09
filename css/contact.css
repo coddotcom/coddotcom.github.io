@@ -1,0 +1,48 @@
+
+
+.contact-form { padding-top: 20px; text-align: left; }
+
+.contact-form input[type="text"],.contact-form input[type="email"],
+.contact-form textarea {
+    background: none; border: 1px solid #fff; 
+    font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #fff; 
+    box-shadow: none;
+    transition: all .3s;
+}
+
+.contact-form textarea { height: 90px; }
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus { outline: 0; background: #fff; border: 1px solid #fff; color: #888; box-shadow: none; }
+
+.contact-form input[type="text"].input-error, .contact-form input[type="email"].input-error, 
+.contact-form textarea.input-error { border-color: #f35b3f; }
+
+.contact-form input[type="text"]::-moz-placeholder, .contact-form input[type="email"]::-moz-placeholder,
+.contact-form textarea::-moz-placeholder { color: #fff; font-style: italic; }
+
+.contact-form input[type="text"]:-ms-input-placeholder,.contact-form input[type="email"]:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder { color: #fff; font-style: italic; }
+
+.contact-form input[type="text"]::-webkit-input-placeholder,.contact-form input[type="email"]::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder { color: #fff; font-style: italic; }
+
+.contact-form button.btn-customized {
+	padding: .75rem 1.5rem; 
+	background: #fff; border: 0; border-radius: 4px; 
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px; font-weight: 300; color:#000; box-shadow: none;
+}
+
+.contact-form button.btn-customized:hover, 
+.contact-form button.btn-customized:active, 
+.contact-form button.btn-customized:focus, 
+.contact-form button.btn-customized:active:focus, 
+.contact-form button.btn-customized.active:focus,
+.contact-form button.btn.btn-primary:not(:disabled):not(.disabled):active,
+.contact-form button.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+	outline: 0; background: #cd533d; background: rgba(243, 91, 63, 0.7); border: 0; color: #fff; box-shadow: none;
+}
+
+.contact-form button.btn-customized i { margin-right: 5px; }
