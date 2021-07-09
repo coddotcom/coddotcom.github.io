@@ -20,6 +20,7 @@
 	 <link rel="stylesheet" type="text/css" href="css/player.css" rel="stylesheet">
 	 <link rel="stylesheet" type="text/css" href="css/contact.css" rel="stylesheet">
 	 <link rel="stylesheet" type="text/css" href="css/footer.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fakeLoader.min.css">
 	
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="dist/css/ckin.css">
@@ -31,7 +32,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <script src="https://kit.fontawesome.com/1ba2f6e73d.js" crossorigin="anonymous"></script>   
+   <script src="https://kit.fontawesome.com/1ba2f6e73d.js" crossorigin="anonymous"></script>  
+	<script src="js/fakeLoader.min.js">
   
 		  
 	
@@ -263,9 +265,7 @@ background:#022b6b;
 </style>
 
 <body>
-<div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
+<div class="fakeLoader"></div>
 	
 <nav class="sticky-top">
   <div class="logo">
@@ -948,11 +948,13 @@ $(function() {
  </script>
 	
 <script>
-$(window).on('load', function() { 
-  $('#status').fadeOut();
-  $('#preloader').delay(350).fadeOut('slow'); . 
-  $('body').delay(350);
-})	
+ $(document).ready(function(){
+                $.fakeLoader({
+                    timeToHide:1200,
+                    bgColor:"#3498db",
+                    spinner:"spinner4"
+                });
+            });
 </script>	
   
  
