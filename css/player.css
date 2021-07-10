@@ -1,8 +1,19 @@
-
-/* Video Container DIV */
-.video-container div {
-  background: yellow;
+.slideCaption {
+position:relative;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top:220px;
+  background-color:#000;
+  padding:5px 0;
+  opacity:0.85;
 }
+
+
+
 
 /* **************
   VIDEO WRAPPER -  FORKED FROM CRAIG MONEY
@@ -47,8 +58,6 @@
   background-position: 50% 50%;
   background-size: 100% 100%;
   background-size: cover;
-  text-indent: -999em;
-  overflow: hidden;
   opacity: 1;
   -webkit-transition: opacity 800ms, height 0s;
   -moz-transition: opacity 800ms, height 0s;
@@ -182,3 +191,21 @@ $(function() {
 
 .no-fouc {visibility: hidden}
 pre {overflow:auto;}
+
+
+@media screen and (max-width:768px) {
+
+   .slideCaption {
+
+  font-size: 12px;
+  color: white;
+  margin-top:120px;
+  background-color:#ccc;
+  padding:5px 0;
+}
+
+.play-vid {
+  width: 70px;
+  height: 70px;
+}
+}
