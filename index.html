@@ -96,7 +96,16 @@ overflow-x:hidden;
  .video-container{height:532px;}
   .gallery{height:530px;}
   
-  .slide-nav-content{height:133px !important;}
+  .slide-nav-content{height:133px !important;overflow:hidden;}
+	
+ .slide-nav-content img {
+      -webkit-transition:all 0.25s ease-in-out;
+      -moz-transition:all 0.25s ease-in-out;
+      -o-transition:all 0.25s ease-in-out;
+      -ms-transition:all 0.25s ease-in-out;
+      transition:all 0.25s ease-in-out;
+     
+    }	
 	
  .slide-nav-content:hover img{
         transform: scale(1.15,1.15);
